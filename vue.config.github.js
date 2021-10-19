@@ -1,5 +1,6 @@
 module.exports = {
-  outputDir: "dist",
+  outputDir: "docs",
+  publicPath: "/onigiri_counter/",
   pages: {
     index: {
       entry: "src/main.js",
