@@ -15,9 +15,9 @@
 
 ## Use（いますぐ使う）
 
-[おにぎり電卓（Github Pages）](https://fuyoneko.github.io/onigiri_counter)
+[おにぎり電卓（Github Pages）](https://fuyoneko.github.io/onigiri_counter/)
 
-URL: [ https://fuyoneko.github.io/onigiri_counter ]
+URL: [ https://fuyoneko.github.io/onigiri_counter/ ]
 
 ## License（ライセンス）
 
