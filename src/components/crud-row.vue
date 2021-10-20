@@ -47,6 +47,10 @@
                   class="pr-6"
                   type="number"
                   style="max-width: 160px"
+                  :hint="hintMessage"
+                  @focus="hintMessage='半角数字を入力'"
+                  @blur="hintMessage='クリックして入力モード'"
+                  persistent-hint
                   v-on:keydown.enter="registerItem"
                 ></v-text-field>
                 <!-- おにぎりの追加ボタン -->
@@ -152,7 +156,9 @@ export default {
       defaultItem: {
         insertDate: "",
         ricecake: 0
-      }
+      },
+      /** ヒントメッセージ */
+      hintMessage: ""
     };
   },
 
