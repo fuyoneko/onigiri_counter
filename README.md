@@ -58,7 +58,7 @@ npm run serve
 `package.json`のあるディレクトリで以下のコマンドを実施します。
 
 ```
-npm run build
+npm run github_build
 ```
 
 `docs`以下のファイルが更新されるため、そのままpushします。
@@ -71,7 +71,7 @@ npm run build
 npm run build
 ```
 
-`docs`以下に作成されたファイルを、自身の環境にアップロードします。
+`dist`以下に作成されたファイルを、自身の環境にアップロードします。
 
 ## 動作検証時のブラウザ
 
