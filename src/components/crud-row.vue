@@ -48,8 +48,8 @@
                   type="number"
                   style="max-width: 160px"
                   :hint="hintMessage"
-                  @focus="hintMessage='半角数字を入力'"
-                  @blur="hintMessage='クリックして入力モード'"
+                  @focus="hintMessage=hintMessageConstant.focus"
+                  @blur="hintMessage=hintMessageConstant.blur"
                   persistent-hint
                   v-on:keydown.enter="registerItem"
                 ></v-text-field>
@@ -158,7 +158,11 @@ export default {
         ricecake: 0
       },
       /** ヒントメッセージ */
-      hintMessage: ""
+      hintMessage: "",
+      hintMessageConstant: {
+        focus: "半角数字を入力",
+        blur: "クリックして入力モード"
+      }
     };
   },
 
@@ -193,7 +197,13 @@ export default {
   mounted() {
     this.$nextTick(() => {
       // おにぎりの入力エリアにフォーカスをあてる
-      ViewControl.focus.toInput(this.$refs.ricecakeInput);
+      let status = ViewControl.focus.toInput(this.$refs.ricecakeInput);
+      // フォーカスの状態に応じてヒントメッセージの初期状態を設定する
+      if (status) {
+        this.hintMessage = this.hintMessageConstant.focus;
+      } else {
+        this.hintMessage = this.hintMessageConstant.blur;
+      }
     });
   },
 

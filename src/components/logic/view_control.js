@@ -19,7 +19,9 @@ class FocusControl {
           void 0;
         }
       }, 0);
+      return true;
     }
+    return false;
   }
 }
 

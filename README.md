@@ -17,7 +17,10 @@
 
 [おにぎり電卓（Github Pages）](https://fuyoneko.github.io/onigiri_counter/)
 
-URL: [ https://fuyoneko.github.io/onigiri_counter/ ]
+|形式|URL|
+|:--|:--|
+|URL| https://fuyoneko.github.io/onigiri_counter/ |
+|短縮URL| https://bit.ly/3DZm6u0 |
 
 ## License（ライセンス）
 
