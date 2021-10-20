@@ -48,7 +48,7 @@ class LocalStrageController {
    */
   putValueToLocalStorage(key, value) {
     try {
-      if ((key || "").length == 0) {
+      if ((value || "").length == 0) {
         return;
       }
       // ローカルストレージに保存する

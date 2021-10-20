@@ -183,7 +183,7 @@ export default {
     syncParameter(storeKey, storageKey, value) {
       try {
         this.$store.commit(storeKey, value);
-        Storage.putValueToLocalStorage(storageKey, value);
+        Storage.controller.putValueToLocalStorage(storageKey, value);
       } catch {
         void 0;
       }
