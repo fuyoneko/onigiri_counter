@@ -81,14 +81,17 @@
             <div>3. おにぎりの数をアプリに入力、どんどん足していきます</div>
             <div>4. 「COPYボタン」をタップして、計算結果をコピーします</div>
             <div>5. 同盟チャットにペーストして、防衛できる時間を共有します</div>
-            <div class="text-h6 content-subtitle">利用例</div>
+            <div class="text-h6 content-subtitle">便利な利用例</div>
             <div>
-              <div>スマートフォンのアプリの切り替えで、手前にゲーム、後ろに電卓を表示します</div>
+              <div>ユニバーサルクリップボード機能（※クリップボードを共有するiPhone/iPadの機能）で、別のiPhoneやMacで電卓を使って、計算結果を転送するのが便利です</div>
               <div>
-                <img width="40%" :src="baseUrl+'images/help_switch.png'" />
+                <img width="90%" :src="baseUrl+'images/help_transfer.png'" />
               </div>
               <br />
-              <div>ユニバーサルクリップボード（※クリップボードにコピーした内容を共有する機能）を使って、iPhoneにゲーム、別のiPhoneやMacに電卓を表示することもできます</div>
+              <div>移動中でスマートフォンのほかは触れない。そんな時でも、手前にゲームを、後ろに電卓を表示して切り替えながら集計ができます</div>
+              <div>
+                <img width="35%" :src="baseUrl+'images/help_switch.png'" />
+              </div>
             </div>
             <div class="text-h6 content-subtitle">このアプリの機能</div>
             <div>
